@@ -13,8 +13,6 @@
 // if(edad>=18) alert ('Puedes conducir')
 //     else alert('Aun no puedes conducir')
 
-
-
 //----------------------------------------------------------------------
 //Podemos hacerlo con operador ternario
 // var edad = parseInt(prompt('Introduce tu edad'))
@@ -44,44 +42,43 @@
 
 //CONDICIONALES Y OPERADORES LOGICOS
 
-// let eleccion = prompt(
-//   'Ingrese como esta el cielo: soleado, lluvioso, nevando o nublado'
-// )
-// eleccion = eleccion.toLowerCase();
-// let temperatura = parseInt(prompt('Ingrese la temperatura:'))
+let eleccion = prompt(
+  'Ingrese como esta el cielo: soleado, lluvioso, nevando o nublado'
+)
+eleccion = eleccion.toLowerCase()
+let temperatura = parseInt(prompt('Ingrese la temperatura:'))
 
-// if (eleccion === 'soleado' && temperatura < 10) {
-//   alert('Está a ' + temperatura + ' grados afuera — Soleado, pero frio.')
-// } else if (
-//   eleccion === 'soleado' &&
-//   temperatura < 25 &&
-//   temperatura >= 10
-// ) {
-//   alert('Está a ' + temperatura + ' grados afuera — agradable y soleado.')
-// } else if (eleccion === 'soleado' && temperatura >= 25) {
-//   alert('Está a ' + temperatura + ' grados afuera — ¡QUÉ CALOR! ')
-// }else if (
-//     (eleccion === 'lluvioso' ||
-//       eleccion === 'nevando' ||
-//       eleccion === 'nublado') &&
-//     (temperatura>25 )
-//   ) {
-//     alert(`Está a ${temperatura} grados afuera — Cielo: ${eleccion}. Caluroso`)
-//   } else if (
-//   (eleccion === 'lluvioso' ||
-//     eleccion === 'nevando' ||
-//     eleccion === 'nublado') &&
-//   (temperatura <= 25 && temperatura > 10)
-// ) {
-//   alert(`Está a ${temperatura} grados afuera — Cielo: ${eleccion}`)
-// } else if (
-//     (eleccion === 'lluvioso' ||
-//       eleccion === 'nevando' ||
-//       eleccion === 'nublado') &&
-//     temperatura <= 10
-//   ) {
-//     alert('Está a ' + temperatura + ' grados afuera — Muy frio. Cielo ' + eleccion)
-//   }else alert('Ingrese datos correctos')
+if (eleccion === 'soleado' && temperatura < 10) {
+  alert('Está a ' + temperatura + ' grados afuera — Soleado, pero frio.')
+} else if (eleccion === 'soleado' && temperatura < 25 && temperatura >= 10) {
+  alert('Está a ' + temperatura + ' grados afuera — agradable y soleado.')
+} else if (eleccion === 'soleado' && temperatura >= 25) {
+  alert('Está a ' + temperatura + ' grados afuera — ¡QUÉ CALOR! ')
+} else if (
+  (eleccion === 'lluvioso' ||
+    eleccion === 'nevando' ||
+    eleccion === 'nublado') &&
+  temperatura > 25
+) {
+  alert(`Está a ${temperatura} grados afuera — Cielo: ${eleccion}. Caluroso`)
+} else if (
+  (eleccion === 'lluvioso' ||
+    eleccion === 'nevando' ||
+    eleccion === 'nublado') &&
+  temperatura <= 25 &&
+  temperatura > 10
+) {
+  alert(`Está a ${temperatura} grados afuera — Cielo: ${eleccion}`)
+} else if (
+  (eleccion === 'lluvioso' ||
+    eleccion === 'nevando' ||
+    eleccion === 'nublado') &&
+  temperatura <= 10
+) {
+  alert(
+    'Está a ' + temperatura + ' grados afuera — Muy frio. Cielo ' + eleccion
+  )
+} else alert('Ingrese datos correctos')
 
 //-------------------------------------------------------------------------
 
@@ -152,7 +149,6 @@
 //   n ++;
 //   x += n;
 // }
-
 
 //-------------------------------------------------
 
